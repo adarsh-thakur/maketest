@@ -1,0 +1,34 @@
+{
+  "name": "maketest",
+  "version": "0.0.0",
+  "description": "Make Test",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "hub": "^6.1.2",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarsh49/maketest.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "adarsh.thakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarsh49/maketest/issues"
+  },
+  "homepage": "https://github.com/adarsh49/maketest#readme"
+}

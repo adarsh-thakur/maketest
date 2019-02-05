@@ -9,18 +9,25 @@
     "test": "test"
   },
   "dependencies": {
-    "chai": "^4.2.0"
+    "baffle": "^0.3.6",
+    "bootstrap": "^4.2.1",
+    "chai": "^4.2.0",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "hub": "^6.1.2",
-    "mocha": "^5.2.0"
+    "lodash": "^4.17.11",
+    "mocha": "^5.2.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "start":"node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adarsh49/maketest.git"
+    "url": "git://github.com/adarsh49/maketest.git"
   },
   "keywords": [
     "npm"

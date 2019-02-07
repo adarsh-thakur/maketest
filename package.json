@@ -12,6 +12,7 @@
     "chai": "^4.2.0"
   },
   "devDependencies": {
+    "gulp": "^4.0.0",
     "hub": "^6.1.2",
     "mocha": "^5.2.0"
   },

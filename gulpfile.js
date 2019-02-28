@@ -1,20 +1,28 @@
+// ----------------------------all require  gose here-----------------------------------------
+
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
+// ----------------------------gulp tasks-----------------------------------------
 
-gulp.task('serve', function() {
-  browserSync.init({
-    server: './'
-  });
-});
+  gulp.task('serve', function() {
+    browserSync.init({
+      server: './'
+      });
+    });
 
-gulp.task('watch', function() {
+  gulp.task('watch', function() {
       return new Promise(function(resolve, reject) {
-    gulp.watch(['*.html','src/*'], browserSync.reload);
-    resolve();
+      gulp.watch(['*.html','src/*'], browserSync.reload);
+      resolve();
+    });
   });
-});
-gulp.task('copy', copy);
+
+  gulp.task('copy', copy);
+
+  gulp.task('default', gulp.parallel('serve', 'watch'));
+
+  // ----------------------------functions-----------------------------------------
 
     function copy() {
       return new Promise(function(resolve, reject) {
@@ -25,5 +33,4 @@ gulp.task('copy', copy);
         resolve();
       });
     }
-
-    gulp.task('default', gulp.parallel('serve', 'watch'));
+//------------------------------------------------------------------------------------------
